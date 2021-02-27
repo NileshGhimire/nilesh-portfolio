@@ -1,0 +1,10 @@
+.main_container{
+    width: 100%;
+    height: auto;
+}
+.main_inside_container{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
