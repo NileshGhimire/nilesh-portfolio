@@ -1,11 +1,13 @@
-
 import './App.css';
 import MainContainer from "./Components/MainContainer/MainContainer";
+import CssBaseline from '@material-ui/core/CssBaseline';
 function App() {
   return (
-    <div className="App">
-      <MainContainer></MainContainer>
-    </div>
+    <>
+      <CssBaseline />
+      <MainContainer />
+    
+    </>
   );
 }
 
