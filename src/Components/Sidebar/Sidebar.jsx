@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import nilesh from "../../images/276A1842.jpg";
 import {
   Box,
@@ -28,33 +28,23 @@ const useStyles = makeStyles((theme) => ({
     color: "tan",
   },
 }));
-const Sidebar = () => {
-  const classes = useStyles();
-  return (
-    <>
-      <Box component="div" className={classes.menuSlideContainer}>
-        <Avatar
-          src={nilesh}
-          alt="Nilesh"
-          className={classes.logoAvatar}
-        ></Avatar>
-        <Divider />
-        <List>
-          {menuIcons.map((item, key) => (
-            <ListItem button key={key}>
-              <ListItemIcon className={classes.listData}>
-                {item.listIcon}
-              </ListItemIcon>
-              <ListItemText
-                className={classes.listData}
-                primary={item.listText}
-              />
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-    </>
-  );
-};
 
+const Sidebar = (slider) => {
+  const classes = useStyles();
+
+  <Box component="div" className={classes.menuSlideContainer}>
+    <Avatar src={nilesh} alt="Nilesh" className={classes.logoAvatar}></Avatar>
+    <Divider />
+    <List>
+      {menuIcons.map((item, key) => (
+        <ListItem button key={key}>
+          <ListItemIcon className={classes.listData}>
+            {item.listIcon}
+          </ListItemIcon>
+          <ListItemText className={classes.listData} primary={item.listText} />
+        </ListItem>
+      ))}
+    </List>
+  </Box>;
+};
 export default Sidebar;
