@@ -1,8 +1,17 @@
 import React from "react";
-import { Typography, Box, Avatar, Grid } from "@material-ui/core";
+import {
+  Typography,
+  Box,
+  Avatar,
+  Grid,
+  List,
+  ListItem,
+  ListItemIcon,
+} from "@material-ui/core";
 import nilesh from "../../images/276A1842.jpg";
 import Typed from "react-typed";
 import { makeStyles } from "@material-ui/core/styles";
+import { socialMediaIcons } from "../../storage/NavData";
 const useStyles = makeStyles((theme) => ({
   headerContainer: {
     position: "absolute",
@@ -28,6 +37,15 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: "3rem",
     fontSize: "1.5rem",
     opacity: 0.6,
+  },
+  socialicon: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  icons: {
+    width: "5vw",
+    height: "5vh",
   },
 }));
 const Header = () => {
@@ -55,6 +73,13 @@ const Header = () => {
           className={classes.subtitle}
         />
       </Typography>
+      <List className={classes.socialicon}>
+        {socialMediaIcons.map((item, key) => (
+          <ListItem className={classes.icons} button key={key}>
+            <ListItemIcon>{item.socialicon}</ListItemIcon>
+          </ListItem>
+        ))}
+      </List>
     </Box>
   );
 };

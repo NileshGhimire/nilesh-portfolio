@@ -3,6 +3,10 @@ import {
     Home,
     Apps,
     ContactMail,
+    Facebook,
+    Instagram,
+    GitHub,
+    LinkedIn
   } from "@material-ui/icons";
 export const menuIcons = [
     {
@@ -22,4 +26,19 @@ export const menuIcons = [
         listText:"Contact Us"
     },
 
+]
+export const socialMediaIcons = [ 
+    {
+        socialicon: <Facebook />,
+    },
+        {
+            socialicon: <Instagram />,
+        },
+      {
+        socialicon: <GitHub />,
+    },
+    {
+        socialicon:<LinkedIn/>
+      },
+        
 ]
