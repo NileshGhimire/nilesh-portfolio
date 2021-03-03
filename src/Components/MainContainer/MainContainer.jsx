@@ -2,12 +2,11 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import Particles from "react-particles-js";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   particlecanva: {
     position: "absolute",
-    color: "skyblue",
   },
 });
 const MainContainer = () => {

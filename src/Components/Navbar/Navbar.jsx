@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "./Navbar.module.css";
+import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -53,7 +54,7 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuIcons.map((item, key) => (
-          <ListItem button key={key}>
+          <ListItem button key={key} component={Link} to={item.listPath}>
             <ListItemIcon className={classes.listData}>
               {item.listIcon}
             </ListItemIcon>
