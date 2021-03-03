@@ -16,14 +16,14 @@ import {
 } from "@material-ui/core";
 import { Home } from "@material-ui/icons";
 import nilesh from "../../images/276A1842.jpg";
-import { makeStyles } from "@material-ui/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { menuIcons } from "../../storage/NavData";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
 // CSS STYLES
 const useStyles = makeStyles((theme) => ({
   menuSlideContainer: {
     width: 250,
-    background: "#511",
+    background: "darkslategrey",
     height: "100%",
   },
   logoAvatar: {
@@ -71,7 +71,10 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222", width: "100%" }}>
+        <AppBar
+          position="static"
+          style={{ background: "darkslategrey", width: "100%" }}
+        >
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <Home style={{ color: "tan" }}></Home>
