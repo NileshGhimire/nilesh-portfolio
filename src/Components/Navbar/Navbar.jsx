@@ -70,7 +70,7 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "#222" }}>
+        <AppBar position="static" style={{ background: "#222", width: "100%" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <Home style={{ color: "tan" }}></Home>

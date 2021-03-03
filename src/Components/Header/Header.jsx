@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     left: "50%",
     transform: "translate(-50%, -50%)",
     textAlign: "center",
-    width: "100vw",
+    width: "98vw",
     zIndex: 1,
   },
   avatar: {
@@ -39,13 +39,11 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.6,
   },
   socialicon: {
+    marginTop: "5%",
+    marginLeft: "10%",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-  },
-  icons: {
-    width: "5vw",
-    height: "5vh",
   },
 }));
 const Header = () => {
