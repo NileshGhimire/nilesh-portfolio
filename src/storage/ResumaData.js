@@ -19,6 +19,6 @@ export const resumaData = [ {
         year: 2021,
         heading: ' Node js',
         workingExp: ' No prior working experience in industry, but have been worked on Zoom clone projects',
-        subheading: 'While started to learn React i too started to learn Node js using express as server where i work on zoom clone using Web RTC.'
+        subheading: 'While started to learn React i too started to learn Node js using express as server where i work on zoom clone using Web RTC.git'
     },
 ]
