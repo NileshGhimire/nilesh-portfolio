@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Typography } from "@material-ui/core";
 import Navbar from "../Navbar/Navbar";
-
+import { resumaData } from "../../storage/ResumaData";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
     background: "#233",
@@ -113,45 +113,29 @@ const Resuma = () => {
         </Typography>
 
         <Box component="div" className={classes.timeLine}>
-          <Typography
-            variant="h2"
-            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-          >
-            2017
-          </Typography>
+          {resumaData.map((item, key) => (
+            <>
+              <Typography
+                key={key}
+                variant="h2"
+                className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+              >
+                {item.year}
+              </Typography>
 
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography variant="h5" className={classes.subHeading}>
-              Web Design
-            </Typography>
-            <Typography variant="body1" style={{ color: "tomato" }}>
-              1 year self working experience while in university
-            </Typography>
-            <Typography variant="subtitle1" style={{ color: "tan" }}>
-              Web design and development was module were learned about
-              fundmental of Web while studying in Campus.
-            </Typography>
-          </Box>
-
-          <Typography
-            variant="h2"
-            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-          >
-            2018
-          </Typography>
-
-          <Box component="div" className={classes.timeLineItem}>
-            <Typography variant="h5" className={classes.subHeading}>
-              ASp.net
-            </Typography>
-            <Typography variant="body1" style={{ color: "tomato" }}>
-              6 month self working experience while in campus
-            </Typography>
-            <Typography variant="subtitle1" style={{ color: "tan" }}>
-              Web design and development was module were learned about
-              fundmental of Web while studying in Campus.
-            </Typography>
-          </Box>
+              <Box component="div" className={classes.timeLineItem}>
+                <Typography variant="h5" className={classes.subHeading}>
+                  {item.heading}
+                </Typography>
+                <Typography variant="body1" style={{ color: "tomato" }}>
+                  {item.workingExp}
+                </Typography>
+                <Typography variant="subtitle1" style={{ color: "tan" }}>
+                  {item.subheading}
+                </Typography>
+              </Box>
+            </>
+          ))}
         </Box>
       </Box>
     </>

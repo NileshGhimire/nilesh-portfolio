@@ -15,11 +15,11 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 import { Home } from "@material-ui/icons";
-import nilesh from "../../images/276A1842.jpg";
+import nilesh from "../../images/pexels-kevin-ku-577585.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import { menuIcons } from "../../storage/NavData";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
-// CSS STYLES
+// Start CSS STYLES
 const useStyles = makeStyles((theme) => ({
   menuSlideContainer: {
     width: 250,
@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     color: "tan",
   },
 }));
+/// End Css Styles
 
 const Navbar = () => {
   const [state, setState] = useState({ right: false });
