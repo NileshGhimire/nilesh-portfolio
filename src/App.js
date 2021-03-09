@@ -10,7 +10,7 @@ function App() {
   return ( 
     <>
       <CssBaseline />
-      <Route exact path="/" component={MainContainer}></Route>
+      <Route exact path="/nilesh-portfolio" component={MainContainer}></Route>
       <Route path="/resuma" component={Resuma}></Route>
       <Route path="/portfolio" component={Portfolio}></Route>
       <Route path="/contact" component={Contact}></Route>
