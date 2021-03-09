@@ -19,8 +19,10 @@ const useStyles = makeStyles({
     height: "100%",
   },
   cardContainer: {
-    maxWidth: 345,
-    margin: "3rem 5rem auto",
+    maxWidth: 350,
+    margin: "4rem",
+    borderRadius: "1rem",
+    backgroundColor: "lightgray",
   },
   cardImage: {
     objectFit: "cover",

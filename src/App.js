@@ -5,6 +5,7 @@ import Resuma from "./Components/Resuma/Resuma";
 import Portfolio from "./Components/Portfolio/Portfolio"
 import { Route } from "react-router-dom";
 import  Contact  from "./Components/Contact/Contact";
+import Navbar from './Components/Navbar/Navbar'
 function App() {
   return ( 
     <>
