@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, TextField, Grid, Button } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-import { SendIcon } from "@material-ui/icons/Send";
+import SendIcon from "@material-ui/icons/Send";
 import Navbar from "../Navbar/Navbar";
 
 const InputField = withStyles({
@@ -28,15 +28,19 @@ const InputField = withStyles({
 const useStyles = makeStyles({
   mainContainer: {},
   heading: {
-    color: "whitesmoke",
-    opacity: "0.5",
+    color: "tomato",
     textTransform: "uppercase",
   },
   form: {
-    margin: "5rem",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
   },
-  inputfield: {
+  button: {
     marginTop: "1rem",
+    color: "tomato",
+    borderColor: "tomato",
   },
 });
 const Contact = () => {
@@ -54,20 +58,37 @@ const Contact = () => {
               fullWidth={true}
               label="Name"
               variant="outlined"
-              className={classes.inputfield}
+              inputProps={{ style: { color: "white" } }}
+              margin="dense"
+              size="medium"
             />
+            <br />
             <InputField
               fullWidth={true}
               label="Email"
               variant="outlined"
-              className={classes.inputfield}
+              inputProps={{ style: { color: "white" } }}
+              margin="dense"
+              size="medium"
             />
+            <br />
             <InputField
               fullWidth={true}
               label="CompanyName"
               variant="outlined"
-              className={classes.inputfield}
+              inputProps={{ style: { color: "white" } }}
+              margin="dense"
+              size="medium"
             />
+            <br />
+            <Button
+              variant="outlined"
+              fullWidth={true}
+              endIcon={<SendIcon />}
+              className={classes.button}
+            >
+              Contact Me
+            </Button>
           </Box>
         </Grid>
       </Box>

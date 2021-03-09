@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import style from "./Navbar.module.css";
 import { Link } from "react-router-dom";
 import {
   AppBar,
@@ -72,10 +71,7 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar
-          position="static"
-          style={{ background: "darkslategrey", width: "100%" }}
-        >
+        <AppBar position="static" style={{ background: "none", width: "100%" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
               <Home style={{ color: "tan" }}></Home>

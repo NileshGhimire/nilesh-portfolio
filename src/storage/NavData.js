@@ -11,7 +11,7 @@ import {
 export const menuIcons = [ {
         listIcon: < Home / > ,
         listText: "Home",
-        listPath: "/nilesh-portfolio",
+        listPath: "/",
     },
     {
         listIcon: < AssignmentInd / > ,
