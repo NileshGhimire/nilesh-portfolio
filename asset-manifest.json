@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/nilesh-portfolio/static/css/main.605d826e.chunk.css",
+    "main.js": "/nilesh-portfolio/static/js/main.9c3c11b1.chunk.js",
+    "main.js.map": "/nilesh-portfolio/static/js/main.9c3c11b1.chunk.js.map",
+    "runtime-main.js": "/nilesh-portfolio/static/js/runtime-main.5f98110a.js",
+    "runtime-main.js.map": "/nilesh-portfolio/static/js/runtime-main.5f98110a.js.map",
+    "static/js/2.a4cd92c2.chunk.js": "/nilesh-portfolio/static/js/2.a4cd92c2.chunk.js",
+    "static/js/2.a4cd92c2.chunk.js.map": "/nilesh-portfolio/static/js/2.a4cd92c2.chunk.js.map",
+    "index.html": "/nilesh-portfolio/index.html",
+    "static/css/main.605d826e.chunk.css.map": "/nilesh-portfolio/static/css/main.605d826e.chunk.css.map",
+    "static/js/2.a4cd92c2.chunk.js.LICENSE.txt": "/nilesh-portfolio/static/js/2.a4cd92c2.chunk.js.LICENSE.txt",
+    "static/media/276A1842.78d6a608.jpg": "/nilesh-portfolio/static/media/276A1842.78d6a608.jpg",
+    "static/media/airbnb.c3067312.png": "/nilesh-portfolio/static/media/airbnb.c3067312.png",
+    "static/media/cheque.26f5cf95.PNG": "/nilesh-portfolio/static/media/cheque.26f5cf95.PNG",
+    "static/media/pexels-kevin-ku-577585.3150c426.jpg": "/nilesh-portfolio/static/media/pexels-kevin-ku-577585.3150c426.jpg",
+    "static/media/silk.eaeaf467.png": "/nilesh-portfolio/static/media/silk.eaeaf467.png",
+    "static/media/whatsapp.46e4e3bb.png": "/nilesh-portfolio/static/media/whatsapp.46e4e3bb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f98110a.js",
+    "static/js/2.a4cd92c2.chunk.js",
+    "static/css/main.605d826e.chunk.css",
+    "static/js/main.9c3c11b1.chunk.js"
+  ]
+}
