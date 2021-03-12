@@ -15,7 +15,6 @@ import { makeStyles } from "@material-ui/core/styles";
 import { portfolioData } from "../../storage/PortfolioData";
 const useStyles = makeStyles({
   mainContainer: {
-    background: "#233",
     height: "100%",
   },
   cardContainer: {
