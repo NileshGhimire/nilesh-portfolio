@@ -16,10 +16,18 @@ import { portfolioData } from "../../storage/PortfolioData";
 const useStyles = makeStyles({
   mainContainer: {
     height: "100%",
+    backgroundColor: "#2f454e",
+  },
+  portHead: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "white",
+    textTransform: "uppercase",
   },
   cardContainer: {
-    maxWidth: 350,
-    margin: "4rem",
+    maxWidth: 500,
+    margin: "2rem",
     borderRadius: "1rem",
     backgroundColor: "lightgray",
   },
@@ -32,9 +40,15 @@ const Portfolio = () => {
   const classes = useStyles();
   return (
     <>
-      <Navbar></Navbar>
       <Box component="div" className={classes.mainContainer}>
-        <Grid container justify="center" alignItems="center">
+        <Typography
+          variant="h2"
+          color="textSecondary"
+          className={classes.portHead}
+        >
+          Portfolio
+        </Typography>
+        <Grid container>
           {portfolioData.map((item, key) => (
             <>
               <Grid item xs={12} sm={8} md={6}>
@@ -59,14 +73,14 @@ const Portfolio = () => {
                         {item.description}
                       </Typography>
                     </CardContent>
-                    <CardActions>
+                    {/* <CardActions>
                       <Button size="small" color="primary">
                         Share
                       </Button>
                       <Button size="small" color="primary">
                         Live Demo
                       </Button>
-                    </CardActions>
+                    </CardActions> */}
                   </CardActionArea>
                 </Card>
               </Grid>

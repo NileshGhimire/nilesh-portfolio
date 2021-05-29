@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
     background: "darkslategrey",
     height: "100%",
   },
+
   logoAvatar: {
     display: "block",
     margin: "0.5rem auto",
@@ -71,14 +72,23 @@ const Navbar = () => {
   return (
     <>
       <Box component="nav">
-        <AppBar position="static" style={{ background: "none", width: "100%" }}>
-          <Toolbar>
+        <AppBar
+          position="static"
+          className={classes.appBar}
+          style={{
+            background: "#22363e",
+            color: "tan",
+            width: "100%",
+          }}
+        >
+          <Toolbar style={{ display: "flex", justifyContent: "space-around" }}>
             <IconButton onClick={toggleSlider("right", true)}>
               <Home style={{ color: "tan" }}></Home>
             </IconButton>
-            <Typography varient="h3" style={{ color: "tan" }}>
-              Nilesh Ghimire
-            </Typography>
+            <Typography varient="h5">Nilesh Ghimire</Typography>
+            <Typography varient="h5">Resuma</Typography>
+            <Typography varient="h5">Portfolio</Typography>
+            <Typography varient="h5">Contact </Typography>
 
             <MobilRightMenuSlider
               open={state.right}

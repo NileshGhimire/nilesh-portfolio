@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Typography,
   Box,
@@ -23,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1,
   },
   avatar: {
-    width: theme.spacing(20),
-    height: theme.spacing(20),
+    width: theme.spacing(30),
+    height: theme.spacing(30),
     margin: theme.spacing(5),
   },
   title: {
@@ -56,9 +57,9 @@ const Header = () => {
       <Typography varient="h4">
         <Typed
           strings={["Hello I am Nilesh Ghimire"]}
-          typeSpeed={40}
+          typeSpeed={10}
           className={classes.title}
-          backSpeed={60}
+          backSpeed={10}
           loop
         />
       </Typography>
@@ -74,7 +75,9 @@ const Header = () => {
       <List className={classes.socialicon}>
         {socialMediaIcons.map((item, key) => (
           <ListItem className={classes.icons} button key={key}>
-            <ListItemIcon>{item.socialicon}</ListItemIcon>
+            <a href={item.socialUrl} rel="noopener">
+              <ListItemIcon>{item.socialicon}</ListItemIcon>
+            </a>
           </ListItem>
         ))}
       </List>

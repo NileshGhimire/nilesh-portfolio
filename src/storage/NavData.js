@@ -29,7 +29,7 @@ export const menuIcons = [ {
         listPath: '/contact'
     },
 
-]
+];
 export const socialMediaIcons = [ {
         socialicon: < Facebook / > ,
         socialUrl: 'https://www.facebook.com/nilesh.ghimire.71',

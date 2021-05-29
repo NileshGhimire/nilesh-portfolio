@@ -3,15 +3,19 @@ import Navbar from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/core/styles";
+import { Box } from "@material-ui/core";
 const useStyles = makeStyles({
+  mainContainer: {
+    height: "100%",
+  },
   particlecanva: {
-    position: "absolute",
+    position: "relative",
   },
 });
 const MainContainer = () => {
   const classes = useStyles();
   return (
-    <>
+    <Box component="div" className={classes.mainContainer}>
       <Navbar></Navbar>
       <Header></Header>
       <Particles
@@ -27,7 +31,7 @@ const MainContainer = () => {
               },
             },
             shape: {
-              type: "star",
+              type: "round",
               stroke: {
                 width: 1,
                 color: "tomato",
@@ -56,7 +60,7 @@ const MainContainer = () => {
           },
         }}
       />
-    </>
+    </Box>
   );
 };
 

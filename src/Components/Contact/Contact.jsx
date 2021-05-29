@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, TextField, Grid, Button } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import SendIcon from "@material-ui/icons/Send";
-import Navbar from "../Navbar/Navbar";
+
 
 const InputField = withStyles({
   root: {
@@ -26,29 +26,33 @@ const InputField = withStyles({
   },
 })(TextField);
 const useStyles = makeStyles({
-  mainContainer: {},
+  mainContainer: {
+    height: "40%",
+    backgroundColor: "red",
+    width: "100%",
+  },
   heading: {
     color: "tomato",
     textTransform: "uppercase",
+    top: "2rem",
   },
   form: {
     position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%,-50%)",
+    left: "33%",
+    transform: "translate( -40 %, 12%)",
   },
   button: {
     marginTop: "1rem",
-    color: "tomato",
     borderColor: "tomato",
+    backgroundColor: "tomato",
+    color: "white",
   },
 });
 const Contact = () => {
   const classes = useStyles();
   return (
     <>
-      <Navbar></Navbar>
-      <Box component="div">
+      <Box component="div" className={classes.mainContainer}>
         <Grid container justify="center">
           <Box component="form" className={classes.form}>
             <Typography variant="h3" className={classes.heading}>
