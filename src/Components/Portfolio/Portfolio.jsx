@@ -7,10 +7,7 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  CardActions,
-  Button,
 } from "@material-ui/core";
-import Navbar from "../Navbar/Navbar";
 import { makeStyles } from "@material-ui/core/styles";
 import { portfolioData } from "../../storage/PortfolioData";
 const useStyles = makeStyles({
@@ -22,8 +19,9 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    color: "white",
+    color: "tomato",
     textTransform: "uppercase",
+    textAlign: "center",
   },
   cardContainer: {
     maxWidth: 500,
@@ -41,12 +39,8 @@ const Portfolio = () => {
   return (
     <>
       <Box component="div" className={classes.mainContainer}>
-        <Typography
-          variant="h2"
-          color="textSecondary"
-          className={classes.portHead}
-        >
-          Portfolio
+        <Typography variant="h3" className={classes.portHead}>
+          Project
         </Typography>
         <Grid container>
           {portfolioData.map((item, key) => (

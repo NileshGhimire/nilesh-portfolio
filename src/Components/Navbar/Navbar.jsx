@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
@@ -18,6 +18,7 @@ import nilesh from "../../images/pexels-kevin-ku-577585.jpg";
 import { makeStyles } from "@material-ui/core/styles";
 import { menuIcons } from "../../storage/NavData";
 import MobilRightMenuSlider from "@material-ui/core/Drawer";
+
 // Start CSS STYLES
 const useStyles = makeStyles((theme) => ({
   menuSlideContainer: {
@@ -34,6 +35,15 @@ const useStyles = makeStyles((theme) => ({
   },
   listData: {
     color: "tan",
+  },
+
+  active: {
+    color: "tan",
+    textDecoration: "none",
+  },
+  toolbar: {
+    display: "flex",
+    justifyContent: "space-around",
   },
 }));
 /// End Css Styles
@@ -55,14 +65,11 @@ const Navbar = () => {
       <Divider />
       <List>
         {menuIcons.map((item, key) => (
-          <ListItem button key={key} component={Link} to={item.listPath}>
+          <ListItem button key={key} component={NavLink} to={item.listPath}>
             <ListItemIcon className={classes.listData}>
               {item.listIcon}
             </ListItemIcon>
-            <ListItemText
-              className={classes.listData}
-              primary={item.listText}
-            />
+            <ListItemText className={classes.navData} primary={item.listText} />
           </ListItem>
         ))}
       </List>
@@ -81,14 +88,19 @@ const Navbar = () => {
             width: "100%",
           }}
         >
-          <Toolbar style={{ display: "flex", justifyContent: "space-around" }}>
+          <Toolbar className={classes.toolbar}>
             <IconButton onClick={toggleSlider("right", true)}>
               <Home style={{ color: "tan" }}></Home>
             </IconButton>
-            <Typography varient="h5">Nilesh Ghimire</Typography>
-            <Typography varient="h5">Resuma</Typography>
-            <Typography varient="h5">Portfolio</Typography>
-            <Typography varient="h5">Contact </Typography>
+            <NavLink className={classes.active} to="resuma">
+              <Typography varient="h5">Resuma</Typography>
+            </NavLink>
+            <NavLink className={classes.active} to="portfolio">
+              <Typography varient="h5">Portfolio</Typography>
+            </NavLink>
+            <NavLink className={classes.active} to="contact">
+              <Typography varient="h5">Contact</Typography>
+            </NavLink>
 
             <MobilRightMenuSlider
               open={state.right}

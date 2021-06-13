@@ -4,6 +4,9 @@ import Header from "../Header/Header";
 import Particles from "react-particles-js";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box } from "@material-ui/core";
+import Resuma from "../Resuma/Resuma";
+import Portfolio from "../Portfolio/Portfolio";
+import Contact from "../Contact/Contact";
 const useStyles = makeStyles({
   mainContainer: {
     height: "100%",
@@ -60,6 +63,9 @@ const MainContainer = () => {
           },
         }}
       />
+      <Resuma />
+      <Portfolio />
+      <Contact />
     </Box>
   );
 };

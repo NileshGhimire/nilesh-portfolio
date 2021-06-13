@@ -3,7 +3,6 @@ import { Box, Typography, TextField, Grid, Button } from "@material-ui/core";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 import SendIcon from "@material-ui/icons/Send";
 
-
 const InputField = withStyles({
   root: {
     "& label.Mui-focused": {
@@ -27,19 +26,19 @@ const InputField = withStyles({
 })(TextField);
 const useStyles = makeStyles({
   mainContainer: {
-    height: "40%",
+    height: "50%",
     backgroundColor: "red",
     width: "100%",
   },
   heading: {
     color: "tomato",
     textTransform: "uppercase",
-    top: "2rem",
+    top: "3rem",
   },
   form: {
     position: "absolute",
     left: "33%",
-    transform: "translate( -40 %, 12%)",
+    // transform: "translate( -40%, 12%)",
   },
   button: {
     marginTop: "1rem",
@@ -55,7 +54,7 @@ const Contact = () => {
       <Box component="div" className={classes.mainContainer}>
         <Grid container justify="center">
           <Box component="form" className={classes.form}>
-            <Typography variant="h3" className={classes.heading}>
+            <Typography variant="h2" className={classes.heading}>
               Contact Me
             </Typography>
             <InputField

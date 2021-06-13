@@ -1,7 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Box, Typography } from "@material-ui/core";
-import Navbar from "../Navbar/Navbar";
 import { resumaData } from "../../storage/ResumaData";
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -92,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: "grey",
+    color: "tomato",
     padding: "3rem 0",
     textTransform: "uppercase",
   },
@@ -106,7 +105,6 @@ const Resuma = () => {
   const classes = useStyles();
   return (
     <>
-    
       <Box component="header" className={classes.mainContainer}>
         <Typography variant="h4" align="center" className={classes.heading}>
           Working Experience
