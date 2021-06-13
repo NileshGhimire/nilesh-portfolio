@@ -1,4 +1,4 @@
-import './App.css';
+
 import MainContainer from "./Components/MainContainer/MainContainer";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Resuma from "./Components/Resuma/Resuma";
